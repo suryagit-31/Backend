@@ -7,7 +7,6 @@ async function connect_DB() {
     const connection_instance = await mongoose.connect(
       `${process.env.MONGODB_URI}/${Db_name}`
     )
-    console.log(`server is ruuning at port ${process.env.PORT}`)
     console.log(
       `Mongo DB connected at DB_HOST : ${connection_instance.connection.host}`
     )
